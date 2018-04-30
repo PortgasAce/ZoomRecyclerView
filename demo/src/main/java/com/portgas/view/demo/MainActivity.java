@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         boolean old = mRecyclerView.isEnableScale();
         mRecyclerView.setEnableScale(!old);
         if (!old) {
-          Toast.makeText(MainActivity.this, "打开缩放", Toast.LENGTH_SHORT).show();
+          Toast.makeText(MainActivity.this, "enable scale", Toast.LENGTH_SHORT).show();
         } else {
-          Toast.makeText(MainActivity.this, "禁用缩放", Toast.LENGTH_SHORT).show();
+          Toast.makeText(MainActivity.this, "disable scale", Toast.LENGTH_SHORT).show();
         }
       }
     });
@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         int o = layoutManager.getOrientation();
         if (o == VERTICAL) {
           layoutManager.setOrientation(HORIZONTAL);
-          Toast.makeText(MainActivity.this, "横向", Toast.LENGTH_LONG).show();
+          Toast.makeText(MainActivity.this, "HORIZONTAL", Toast.LENGTH_LONG).show();
         } else {
           layoutManager.setOrientation(VERTICAL);
-          Toast.makeText(MainActivity.this, "竖向", Toast.LENGTH_LONG).show();
+          Toast.makeText(MainActivity.this, "VERTICAL", Toast.LENGTH_LONG).show();
         }
       }
     });
